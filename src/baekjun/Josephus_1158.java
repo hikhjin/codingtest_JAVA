@@ -22,9 +22,9 @@ public class Josephus_1158 {
 
         int k = Integer.parseInt(st.nextToken());
 
-        while (queue.size() != 1) {
+        while (queue.size() != 1) { // queue에 값이 하나 남을 때까지 반복
             for (int i = 0; i < k - 1; i++) {
-                int tmp = queue.poll();
+                int tmp = queue.poll(); // poll은 queue에 값이 없으면 null을 반환하기 때문에 반복문에서 값이 1개 남을 때까지만 반복하도록 함
                 queue.offer(tmp);
             }
             sb.append(queue.poll()).append(", ");
