@@ -24,10 +24,12 @@ public class Josephus_1158 {
 
         while (queue.size() != 1) {
             for (int i = 0; i < k - 1; i++) {
-                if
-                sb.append(queue.poll());
+                int tmp = queue.poll();
+                queue.offer(tmp);
             }
+            sb.append(queue.poll()).append(", ");
         }
+        sb.append(queue.peek()); // 마지막 하나 append
 
         System.out.println("<" + sb + ">");
     }
