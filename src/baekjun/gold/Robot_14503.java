@@ -33,10 +33,6 @@ public class Robot_14503 {
             if (arr[r][c] == 0) { // 청소 되어 있지 않은 칸 -> 청소하기
                 arr[r][c] = 10; // 청소된 상태 : 10
                 ans += 1;
-//                System.out.println("ans = " + ans);
-//                System.out.println("r = " + r);
-//                System.out.println("c = " + c);
-//                System.out.println("d = " + d);
 //                for (int i = 0; i < arr.length; i++) {
 //                    int[] inArr = arr[i];
 //                    for (int j = 0; j < inArr.length; j++) {
