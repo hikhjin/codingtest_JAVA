@@ -16,7 +16,6 @@ public class Apartment_2667 {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringBuilder sb = new StringBuilder();
 
         N = Integer.parseInt(br.readLine()); // 지도 크기
         map = new int[N][N]; // 지도 배열
@@ -34,14 +33,14 @@ public class Apartment_2667 {
                 if (!visited[i][j] && map[i][j] == 1) {
                     cnt += 1;
                     DFS(i, j);
-                    ans.add(tmp+1);
-                    tmp = 0;
+                    ans.add(tmp+1); // 처음 탐색한 아파트 더해줌
+                    tmp = 0; // 초기화
                 }
             }
         }
         System.out.println(cnt);
 
-        ans.sort(Comparator.naturalOrder());
+        ans.sort(Comparator.naturalOrder()); // 오름차순 정렬
         for (Integer an : ans) {
             System.out.println(an);
         }
