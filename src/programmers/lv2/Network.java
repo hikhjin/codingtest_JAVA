@@ -1,6 +1,6 @@
 package programmers.lv2;
 
-class Solution {
+class Solution_Network {
     static boolean[] visited;
     public int solution(int n, int[][] computers) {
         visited = new boolean[n];
