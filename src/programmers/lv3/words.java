@@ -2,7 +2,7 @@ package programmers.lv3;
 
 import java.util.*;
 
-class Solution {
+class Solution_Words {
 
     static int[] visited;
 
@@ -73,7 +73,7 @@ class Solution {
 
 public class words {
     public static void main(String[] args) {
-        Solution s = new Solution();
+        Solution_Words s = new Solution_Words();
         String[] words = {"hot", "dot", "dog", "lot", "log", "cog"};
         s.solution(	"hit", "cog", words);
     }

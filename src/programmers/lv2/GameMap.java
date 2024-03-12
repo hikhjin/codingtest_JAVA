@@ -2,7 +2,7 @@ package programmers.lv2;
 
 import java.util.*;
 
-class Solution {
+class Solution_GameMap {
     static int[][] visited;
 
     public int solution(int[][] maps) {
