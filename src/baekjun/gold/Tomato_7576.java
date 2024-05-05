@@ -17,6 +17,8 @@ public class Tomato_7576 {
         M = Integer.parseInt(st.nextToken());
         N = Integer.parseInt(st.nextToken());
         arr = new int[M][N];
+        
+        //in = new int[N];
 
         for (int i = 0; i < M; i++) {
             st = new StringTokenizer(br.readLine());
@@ -24,9 +26,10 @@ public class Tomato_7576 {
                 arr[i][j] = Integer.parseInt(st.nextToken());
             }
         }
-        for (int[] ints : arr) {
-            System.out.println(ints);
-        }
+//        for (int[] ints : arr) {
+//            System.out.println(ints);
+//        }
+
 
     }
 }
