@@ -17,8 +17,6 @@ public class Tomato_7576 {
         M = Integer.parseInt(st.nextToken());
         N = Integer.parseInt(st.nextToken());
         arr = new int[M][N];
-        
-        //in = new int[N];
 
         for (int i = 0; i < M; i++) {
             st = new StringTokenizer(br.readLine());
