@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class stack_2 {
+public class stack_2_10828 {
     static int[] stack = new int[10001];
     static int idx = 0;
 
